@@ -1,0 +1,2 @@
+# Understanding-GridSearchCV-in-Machine-Learning-from-A-to-Z
+This article explains GridSearchCV in machine learning, detailing its purpose, key concepts, and workflow. It covers defining parameter grids, setting up cross-validation, running the grid search, and selecting the best model. A practical Random Forest example with code snippets helps automate hyperparameter tuning for optimal model performance.
