@@ -21,3 +21,31 @@ GridSearchCV is a method used to find the best hyperparameters for a machine lea
 
 - A technique to evaluate the performance of a model by splitting the data into multiple subsets, training the model on some subsets, and testing it on the remaining ones.
 - This helps ensure that the model performs well on unseen data.
+
+3. Parameter Grid:
+
+- A dictionary where you specify the hyperparameters you want to test and their possible values.
+- GridSearchCV will try every combination of these parameters to find the best one.
+
+
+4. Scoring Metric:
+
+- A measure used to evaluate the performance of the model. Common metrics include accuracy, precision, recall, F1 score, and ROC-AUC.
+
+# How GridSearchCV Works
+
+1. Define the Parameter Grid:
+
+- Create a dictionary specifying the hyperparameters and their possible values. For example, in a Random Forest, you might want to try different numbers of trees (n_estimators) and different tree depths (max_depth).
+
+2. Set Up Cross-Validation:
+
+- Specify how many folds (subsets) you want to use for cross-validation. A common choice is 5 or 10 folds.
+
+3. Run the Grid Search:
+
+- GridSearchCV will train and evaluate the model using every combination of hyperparameters defined in the grid. It will use cross-validation to ensure reliable performance estimates.
+
+4. Select the Best Model:
+
+- After testing all combinations, GridSearchCV selects the hyperparameters that result in the best performance according to the chosen scoring metric.
